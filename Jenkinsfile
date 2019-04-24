@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         //be sure to replace "przemo1934" with your own Docker Hub username
-        DOCKER_IMAGE_NAME = "przemo1934/train-schedule"
+        DOCKER_IMAGE_NAME = "dykow/train-schedule"
     }
     stages {
         stage('Build') {
@@ -45,7 +45,6 @@ pipeline {
             steps {
                 input 'Deploy to Production?'
                 //implement Kubernetes deployment here
-                )
             }
         }
     }
